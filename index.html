@@ -21,23 +21,23 @@
                 </div>
                 
                     <form>
-                        <div class="row mb-3">
-                            <div class="col-4">
+                        <div class="row mb-md-0 mb-sm-2">
+                            <div class="col-md-4">
                                 <label for="card-number" class="mb-2">Card #</label>
-                                <input type="text" class="form-control" name="card-number" id="card-number" minlength="13" maxlength="18" pattern="^\d{13,18}$" placeholder="XXXXXXXXXXXXX" required >
+                                <input type="text" class="form-control mb-2" name="card-number" id="card-number" minlength="13" maxlength="18" pattern="^\d{13,18}$" placeholder="XXXXXXXXXXXXX" required >
                             </div>
-                            <div class="col-4">
+                            <div class="col-md-4">
                                 <label for="CVC-number" class="mb-2">CVC #</label>
-                                <input type="text" class="form-control" name="CVC" id="CVC-number" minlength="4" maxlength="4" pattern="^\d{4,4}$" placeholder="0000" required>
+                                <input type="text" class="form-control mb-2" name="CVC" id="CVC-number" minlength="4" maxlength="4" pattern="^\d{4,4}$" placeholder="0000" required>
                             </div>
-                            <div class="col-4">
+                            <div class="col-md-4 mb-md-3">
                                 <label for="amount" class="mb-2">Amount</label>
                                 <input type="text" class="form-control" name="amount" id="amount" maxlength="5" pattern="^\d{1,5}$" placeholder="Amount" required>
                             </div>
                         </div>
-                        <div class="row mb-3" >
+                        <div class="row mb-2" >
                             <div class="col-6">
-                                <label for="first-name" class="mr-sm-2 mb-2">First Name</label>
+                                <label for="first-name" class=" mb-2">First Name</label>
                                 <input type="text" class="form-control" name="first-name" id="first-name" pattern="^[A-Za-z]+(?: [A-Za-z]+)?$" required>
                             </div>
                             <div class="col-6">
@@ -46,41 +46,41 @@
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <div class="col-6">
+                            <div class="col-md-6 col-sm-6">
                                 <label for="city" class=" mb-2">City</label>
-                                <input type="text" class="form-control" name="city" id="city" pattern="^[A-Za-z]+(?: [A-Za-z]+)?$" required>
+                                <input type="text" class="form-control mb-2" name="city" id="city" pattern="^[A-Za-z]+(?: [A-Za-z]+)?$" required>
                             </div>
-                            <div class="col-3">
+                            <div class="col-md-3 col-sm-6">
                                 <label for="state" class="mb-2">State</label>
-                                <select class="custom-select form-select" id="state" required>
+                                <select class="custom-select form-select mb-2" id="state" required>
                                 <option value="" selected hidden>Pick a state</option>
                                   <option value="1">Arizona</option>
                                   <option value="2">California</option>
                                   <option value="3">Florida</option>
                                 </select>
                             </div>
-                            <div class="col-3">
-                                <label for="postal-code" class="mr-sm-2 mb-2">Postal Code</label>
+                            <div class="col-md-3 col-sm-12">
+                                <label for="postal-code" class="mb-2">Postal Code</label>
                                 <input type="text" class="form-control" name="postal" id="postal-code" minlength="5" maxlength="5" pattern="^[0-9]+$" required>
                             </div>
                         </div>
                         <div class="row mb-3">
-                                <div class="col-6 d-flex flex-column justify-content-start align-items-start">
+                                <div class="col-md-6 col-sm-12">
                                     <p class="mb-2">We accept:</p>
-                                            <div class="w-auto bg-secondary py-2 rounded px-2">
-                                                <div class="form-check form-check-inline ms-2 me-2">
+                                            <div class="d-md-inline-flex bg-secondary py-2 rounded px-2 mb-2 d-sm-inline-flex d-inline-flex">
+                                                <div class="form-check form-check-inline ms-3 me-2">
                                                     <input class="form-check-input" type="radio" name="card-type" id="mastercard" value="option1" checked>
                                                     <label class="form-check-label form-check-lg" for="mastercard">
                                                         <i class="fa-brands fa-cc-mastercard fa-sm"></i>
                                                     </label>
                                                 </div>
-                                                <div class="form-check form-check-inline me-2">
+                                                <div class="form-check form-check-inline me-3">
                                                     <input class="form-check-input" type="radio" name="card-type" id="visa" value="option2">
                                                     <label class="form-check-label" for="visa">
                                                         <i class="fa-brands fa-cc-visa fa-sm"></i>
                                                     </label>
                                                 </div>
-                                                <div class="form-check form-check-inline me-2">
+                                                <div class="form-check form-check-inline me-3">
                                                     <input class="form-check-input" type="radio" name="card-type" id="amex" value="option3">
                                                     <label class="form-check-label" for="amex">
                                                         <i class="fa-brands fa-cc-amex fa-sm"></i>
@@ -94,7 +94,7 @@
                                                 </div>
                                             </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-md-6 col-sm-12 mt-sm-2 mt-md-0">
                                     <label class="mb-2" for="message">Message</label>
                                     <textarea class="form-control" name="message-content" id="message" rows="3"></textarea>
                                 </div>
