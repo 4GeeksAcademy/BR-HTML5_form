@@ -36,22 +36,5 @@ select:focus:required:valid{
     border-color: green;
 }
 
-#card-number:valid + #CVC-number:valid + #amount:valid + #first-name:valid + #last-name:valid
-+ #city:valid + #state:valid + #postal-code:valid {
-    .alert{
-        background-color: green;
-    }
 
-}
-
-form:valid{
-    .alert {
-        background-color: red;
-    };
-}
-form:required:invalid .alert{
-        margin: 10px;
-        display: none;
-
-}
 
