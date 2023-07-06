@@ -8,19 +8,6 @@ input:focus:required:invalid{
     box-shadow: 0 0 6px red;
     }
 
-/* select:focus:required:invalid{
-    color: red;
-    border-color: red;
-    box-shadow: 0 0 6px red;
-    } */
-/* input:required:invalid{
-    border-color: red;
-} */
-/* input:focus:required:valid, input:focus:required:placeholder-shown{
-    border-color: green;
-    box-shadow: 0 0 8px green;
-} */
-
 input:focus:required:valid{
     border-color: green;
     box-shadow: 0 0 8px green;
