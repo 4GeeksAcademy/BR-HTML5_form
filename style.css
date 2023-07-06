@@ -1,3 +1,57 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+
+input:focus:required:invalid{
+    color: red;
+    border-color: red;
+    box-shadow: 0 0 6px red;
+    }
+
+/* select:focus:required:invalid{
+    color: red;
+    border-color: red;
+    box-shadow: 0 0 6px red;
+    } */
+/* input:required:invalid{
+    border-color: red;
+} */
+/* input:focus:required:valid, input:focus:required:placeholder-shown{
+    border-color: green;
+    box-shadow: 0 0 8px green;
+} */
+
+input:focus:required:valid{
+    border-color: green;
+    box-shadow: 0 0 8px green;
+}
+
+select:focus:required:valid{
+    border-color: green;
+    box-shadow: 0 0 8px green;
+}
+
+#card-number:valid, #CVC-number:valid, #amount:valid, #first-name:valid, #last-name:valid
+, #city:valid, #state:valid, #postal-code:valid{
+    border-color: green;
+}
+
+#card-number:valid + #CVC-number:valid + #amount:valid + #first-name:valid + #last-name:valid
++ #city:valid + #state:valid + #postal-code:valid {
+    .alert{
+        background-color: green;
+    }
+
+}
+
+form:valid{
+    .alert {
+        background-color: red;
+    };
+}
+form:required:invalid .alert{
+        margin: 10px;
+        display: none;
+
+}
+
